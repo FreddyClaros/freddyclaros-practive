@@ -35,6 +35,13 @@ class TddPractice:
     def array_numbers(self, list):
         return ArrayNumbers(list)
 
+    def larger_name(self, array):
+        list = []
+        for x in array:
+            list.append(len(x))
+        return array[list.index(max(list))]
+
+
 class ArrayNumbers:
 
     def __init__(self, array):

@@ -173,6 +173,24 @@ class TddTest(unittest.TestCase):
         self.assertEqual(-7, result.getmin())
         self.assertEqual(-5.4, result.getaverage())
 
+    def test_larger_name(self):#exercise 8
+        list = ['Ecuador', 'Bolivia', 'Argentina', 'Mexico']
+        name = TddPractice()
+        result = name.larger_name(list)
+        self.assertEqual('Argentina', result)
+
+    def test_larger_name(self):
+        list = ['Ecuador', 'Bolivia', 'USA'] #if 2 countries are the same lenght take the first one
+        name = TddPractice()
+        result = name.larger_name(list)
+        self.assertEqual('Ecuador', result)
+
+    def test_larger_name(self):
+        list = ['Ecuador', 'Bolivia', 'USA', 'asdqDAezxc34']
+        name = TddPractice()
+        result = name.larger_name(list)
+        self.assertEqual('asdqDAezxc34', result)
+
 
 if __name__ == '__main__':
     unittest.main()
