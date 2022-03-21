@@ -16,7 +16,7 @@ from src.tdd import TddPractice
 
 
 class TddTest(unittest.TestCase):
-    def test_add(self):
+    def test_add(self): #exercise 1
         add = TddPractice()
         result = add.add(2, 2)
         self.assertEqual(4, result)
@@ -26,7 +26,7 @@ class TddTest(unittest.TestCase):
         result = add.add(5, 2)
         self.assertEqual(7, result)
 
-    def test_validate_age(self):
+    def test_validate_age(self): #exercise 2
         validate = TddPractice()
         result = validate.validate_age(5)
         self.assertTrue(result)
@@ -50,6 +50,26 @@ class TddTest(unittest.TestCase):
         validate = TddPractice()
         result = validate.validate_age(101)
         self.assertFalse(result)
+
+    def test_max(self): #exercise 3
+        maximum = TddPractice()
+        result = maximum.max(101, 10, 500)
+        self.assertEqual(500, result)
+
+    def test_max(self):
+        maximum = TddPractice()
+        result = maximum.max(-20, 1, -500)
+        self.assertEqual(1, result)
+
+    def test_max(self):
+        maximum = TddPractice()
+        result = maximum.max(-20, -91, -500)
+        self.assertEqual(-20, result)
+
+    def test_max(self):
+        maximum = TddPractice()
+        result = maximum.max(50, 52, -500)
+        self.assertEqual(52, result)
 
 
 if __name__ == '__main__':
