@@ -28,3 +28,6 @@ class TddPractice:
 
     def inversa(self, str):
         return str[::-1]
+
+    def palindrome(self, str):
+        return str == str[::-1]

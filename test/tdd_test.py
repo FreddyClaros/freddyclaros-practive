@@ -131,6 +131,26 @@ class TddTest(unittest.TestCase):
         result = inverse.inversa('AT16 Python')
         self.assertEqual('nohtyP 61TA', result)
 
+    def test_palindrome(self): #exercise 6
+        pal = TddPractice()
+        result = pal.palindrome('madam')
+        self.assertEqual('madam', result)
+
+    def test_palindrome(self):
+        pal = TddPractice()
+        result = pal.palindrome('oruro')
+        self.assertEqual('oruro', result)
+
+    def test_palindrome(self):
+        pal = TddPractice()
+        result = pal.palindrome('Oruro') #not counting the capital latters
+        self.assertNotEqual('orurO', result)
+
+    def test_palindrome(self):
+        pal = TddPractice()
+        result = pal.palindrome('Mom')
+        self.assertNotEqual('moM', result)
+
 
 if __name__ == '__main__':
     unittest.main()
