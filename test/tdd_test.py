@@ -71,6 +71,36 @@ class TddTest(unittest.TestCase):
         result = maximum.max(50, 52, -500)
         self.assertEqual(52, result)
 
+    def test_isVocal(self): #exercise 4
+        vocal = TddPractice()
+        result = vocal.isVocal('a')
+        self.assertTrue(result)
+
+    def test_isVocal(self):
+        vocal = TddPractice()
+        result = vocal.isVocal('b')
+        self.assertFalse(result)
+
+    def test_isVocal(self):
+        vocal = TddPractice()
+        result = vocal.isVocal('T')
+        self.assertFalse(result)
+
+    def test_isVocal(self):
+        vocal = TddPractice()
+        result = vocal.isVocal('A')
+        self.assertTrue(result)
+
+    def test_isVocal(self):
+        vocal = TddPractice()
+        result = vocal.isVocal(12)
+        self.assertFalse(result)
+
+    def test_isVocal(self):
+        vocal = TddPractice()
+        result = vocal.isVocal('@')
+        self.assertFalse(result)
+
 
 if __name__ == '__main__':
     unittest.main()

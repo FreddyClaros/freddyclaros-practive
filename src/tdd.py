@@ -21,3 +21,7 @@ class TddPractice:
     def max(self, number1, number2, number3):
         list = [number1, number2, number3]
         return max(list)
+
+    def isVocal(self, char):
+        list = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        return char in list
