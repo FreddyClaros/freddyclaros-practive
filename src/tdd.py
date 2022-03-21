@@ -31,3 +31,20 @@ class TddPractice:
 
     def palindrome(self, str):
         return str == str[::-1]
+
+    def array_numbers(self, list):
+        return ArrayNumbers(list)
+
+class ArrayNumbers:
+
+    def __init__(self, array):
+        self.array = array
+
+    def getmax(self):
+        return max(self.array)
+
+    def getmin(self):
+        return min(self.array)
+
+    def getaverage(self):
+        return sum(self.array) / len(self.array)

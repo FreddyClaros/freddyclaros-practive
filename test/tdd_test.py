@@ -13,6 +13,7 @@
 
 import unittest
 from src.tdd import TddPractice
+from src.tdd import ArrayNumbers
 
 
 class TddTest(unittest.TestCase):
@@ -150,6 +151,27 @@ class TddTest(unittest.TestCase):
         pal = TddPractice()
         result = pal.palindrome('Mom')
         self.assertNotEqual('moM', result)
+
+    def test_array_numbers(self): #exercise 7
+        array = [3, 4, 6, 5, 7]
+        result = ArrayNumbers(array)
+        self.assertEqual(7, result.getmax())
+        self.assertEqual(3, result.getmin())
+        self.assertEqual(5, result.getaverage())
+
+    def test_array_numbers(self):
+        array = [-6, 4, -8, 10, 2, -5]
+        result = ArrayNumbers(array)
+        self.assertEqual(10, result.getmax())
+        self.assertEqual(-8, result.getmin())
+        self.assertEqual(-0.5, result.getaverage())
+
+    def test_array_numbers(self):
+        array = [-6, -3, -5, -6, -7]
+        result = ArrayNumbers(array)
+        self.assertEqual(-3, result.getmax())
+        self.assertEqual(-7, result.getmin())
+        self.assertEqual(-5.4, result.getaverage())
 
 
 if __name__ == '__main__':
