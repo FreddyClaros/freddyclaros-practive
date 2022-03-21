@@ -44,6 +44,9 @@ class TddPractice:
     def binary_of_number(self, num):
         return format(num, "b")
 
+    def count_char(self, str):
+        return len(str)
+
 
 class ArrayNumbers:
 

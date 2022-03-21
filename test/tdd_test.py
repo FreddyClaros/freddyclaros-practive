@@ -211,6 +211,31 @@ class TddTest(unittest.TestCase):
         result = number.binary_of_number(0)
         self.assertEqual('0', result)
 
+    def test_count_char(self):#exercise 10
+        char = TddPractice()
+        result = char.count_char('hello world')
+        self.assertEqual(11, result)
+
+    def test_count_char(self):
+        char = TddPractice()
+        result = char.count_char('tres tristes tigres trigaban trigo')
+        self.assertEqual(34, result)
+
+    def test_count_char(self):
+        char = TddPractice()
+        result = char.count_char('!@#@$#$#   **ffrw')
+        self.assertEqual(17, result)
+
+    def test_count_char(self):
+        char = TddPractice()
+        result = char.count_char('      ')
+        self.assertEqual(6, result)
+
+    def test_count_char(self):
+        char = TddPractice()
+        result = char.count_char('-369')
+        self.assertEqual(4, result)
+
 
 if __name__ == '__main__':
     unittest.main()
