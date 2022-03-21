@@ -25,3 +25,6 @@ class TddPractice:
     def isVocal(self, char):
         list = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
         return char in list
+
+    def inversa(self, str):
+        return str[::-1]

@@ -101,6 +101,36 @@ class TddTest(unittest.TestCase):
         result = vocal.isVocal('@')
         self.assertFalse(result)
 
+    def test_inversa(self): #exercise 5
+        inverse = TddPractice()
+        result = inverse.inversa('abcd')
+        self.assertEqual('dcba', result)
+
+    def test_inversa(self):
+        inverse = TddPractice()
+        result = inverse.inversa('()@##')
+        self.assertEqual('##@)(', result)
+
+    def test_inversa(self):
+        inverse = TddPractice()
+        result = inverse.inversa('aFcd10')
+        self.assertEqual('01dcFa', result)
+
+    def test_inversa(self):
+        inverse = TddPractice()
+        result = inverse.inversa('a  10')
+        self.assertEqual('01  a', result)
+
+    def test_inversa(self):
+        inverse = TddPractice()
+        result = inverse.inversa('a  fd10')
+        self.assertNotEqual('a fd 10', result)
+
+    def test_inversa(self):
+        inverse = TddPractice()
+        result = inverse.inversa('AT16 Python')
+        self.assertEqual('nohtyP 61TA', result)
+
 
 if __name__ == '__main__':
     unittest.main()
