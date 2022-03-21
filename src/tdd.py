@@ -41,6 +41,9 @@ class TddPractice:
             list.append(len(x))
         return array[list.index(max(list))]
 
+    def binary_of_number(self, num):
+        return format(num, "b")
+
 
 class ArrayNumbers:
 

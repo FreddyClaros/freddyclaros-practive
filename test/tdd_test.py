@@ -191,6 +191,26 @@ class TddTest(unittest.TestCase):
         result = name.larger_name(list)
         self.assertEqual('asdqDAezxc34', result)
 
+    def test_binary_of_number(self):#exercise 9
+        number = TddPractice()
+        result = number.binary_of_number(10)
+        self.assertEqual('1010', result)
+
+    def test_binary_of_number(self):
+        number = TddPractice()
+        result = number.binary_of_number(123)
+        self.assertEqual('1111011', result)
+
+    def test_binary_of_number(self):
+        number = TddPractice()
+        result = number.binary_of_number(-23)
+        self.assertEqual('-10111', result)
+
+    def test_binary_of_number(self):
+        number = TddPractice()
+        result = number.binary_of_number(0)
+        self.assertEqual('0', result)
+
 
 if __name__ == '__main__':
     unittest.main()
