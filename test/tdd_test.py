@@ -12,12 +12,19 @@
 #
 
 import unittest
-from src.tdd import Tdd
+from src.tdd import TddPractice
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+class TddTest(unittest.TestCase):
+    def test_add(self):
+        add = TddPractice()
+        result = add.add(2, 2)
+        self.assertEqual(4, result)
+
+    def test_add(self):
+        add = TddPractice()
+        result = add.add(5, 2)
+        self.assertEqual(7, result)
 
 
 if __name__ == '__main__':

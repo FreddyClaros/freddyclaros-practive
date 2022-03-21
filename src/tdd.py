@@ -10,3 +10,7 @@
 # accordance with the terms of the license agreement you entered into
 # with Jalasoft.
 #
+
+class TddPractice:
+    def add(self, number1, number2):
+        return (number1 + number2)
