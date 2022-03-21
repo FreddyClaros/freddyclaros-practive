@@ -14,3 +14,6 @@
 class TddPractice:
     def add(self, number1, number2):
         return (number1 + number2)
+
+    def validate_age(self, age): #validate age between 0 and 100 inclusive
+        return 0 < age <= 100

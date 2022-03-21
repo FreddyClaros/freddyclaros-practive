@@ -26,6 +26,31 @@ class TddTest(unittest.TestCase):
         result = add.add(5, 2)
         self.assertEqual(7, result)
 
+    def test_validate_age(self):
+        validate = TddPractice()
+        result = validate.validate_age(5)
+        self.assertTrue(result)
+
+    def test_validate_age(self):
+        validate = TddPractice()
+        result = validate.validate_age(-5)
+        self.assertFalse(result)
+
+    def test_validate_age(self):
+        validate = TddPractice()
+        result = validate.validate_age(0)
+        self.assertFalse(result)
+
+    def test_validate_age(self):
+        validate = TddPractice()
+        result = validate.validate_age(100)
+        self.assertTrue(result)
+
+    def test_validate_age(self):
+        validate = TddPractice()
+        result = validate.validate_age(101)
+        self.assertFalse(result)
+
 
 if __name__ == '__main__':
     unittest.main()
